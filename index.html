@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-wrapper">
+    <img src="assets/amigo-secreto.png" alt="Amigo Secreto" class="header-image">
+    <div class="container">
+        <h1>Amigo Secreto</h1>
+        <div class="sections">
+            <div class="left-section">
+                <div class="input-wrapper">
+                    <label for="amigo"></label><input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                    <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+                </div>
+                <div id="notificaciones" class="notification-box">Notificaciones Aquí:</div>
+                <div class="resultado-container" id="resultado">
+                    <p class="resultado-text">¡Tu amigo secreto es!</p>
+                    <div class="amigo-seleccionado-wrapper">
+                        <p class="amigo-seleccionado" id="amigoSeleccionado">Sortea para descubrir</p>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="button-draw" onclick="sortearAmigo()">
+                        <img src="assets/play_circle_outline.png" alt="Icono de sortear"> Sortear amigo
+                    </button>
+                    <button class="button-reset" onclick="reiniciarJuego()">Reiniciar juego</button>
+                    <button class="button-exit" onclick="salir()">Salir</button>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="textarea-container">
+                    <div id="listaAmigosContainer" class="friends-list">
+                        <h2 class="friends-list-title">Amigos agregados</h2>
+                        <!-- Aquí se agregarán dinámicamente los amigos -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

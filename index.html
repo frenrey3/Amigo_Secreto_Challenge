@@ -8,13 +8,17 @@
 </head>
 <body>
 <div class="main-wrapper">
-    <img src="assets/amigo-secreto.png" alt="Amigo Secreto" class="header-image">
+    <div class="header-container">
+        <img src="assets/amigo-secreto.png" alt="Amigo Secreto" class="header-image">
+        <h1 class="header-title">Amigo Secreto</h1>
+    </div>
     <div class="container">
-        <h1>Amigo Secreto</h1>
+        <h2>Digite el nombre de sus amigos</h2>
         <div class="sections">
             <div class="left-section">
                 <div class="input-wrapper">
-                    <label for="amigo"></label><input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                    <label for="amigo"></label>
+                    <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
                     <button class="button-add" onclick="agregarAmigo()">Añadir</button>
                 </div>
                 <div id="notificaciones" class="notification-box">Notificaciones Aquí:</div>

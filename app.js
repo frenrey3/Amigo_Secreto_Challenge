@@ -1,5 +1,5 @@
 let listaNombres = [];
-const MAX_AMIGOS = 6;
+const MAX_AMIGOS = 10;
 
 function mostrarNotificacion(mensaje, tipo = 'success') {
     const notificacion = document.getElementById('notificaciones');
@@ -13,10 +13,8 @@ function mostrarNotificacion(mensaje, tipo = 'success') {
 
 function actualizarListaAmigos() {
     const container = document.getElementById('listaAmigosContainer');
-    // Guardamos el título antes de limpiar el contenedor
     const titulo = container.querySelector('.friends-list-title');
     container.innerHTML = '';
-    // Volvemos a añadir el título
     if (titulo) {
         container.appendChild(titulo);
     }
@@ -81,7 +79,7 @@ function sortearAmigo() {
     resultado.classList.remove('hidden');
     sortearButton.textContent = 'Sorteando...';
     sortearButton.disabled = true;
-    
+
     setTimeout(() => {
         const indiceAleatorio = Math.floor(Math.random() * listaNombres.length);
         const ganador = listaNombres[indiceAleatorio];
@@ -100,8 +98,7 @@ function reiniciarJuego() {
     mostrarNotificacion('🔄 Juego reiniciado correctamente');
     document.querySelector('.button-reset').disabled = true;
     document.querySelector('.button-draw').disabled = false;
-    
-    // Mostrar el contenedor de resultado
+
     const resultadoContainer = document.getElementById('resultado');
     resultadoContainer.classList.remove('hidden');
 }

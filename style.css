@@ -34,11 +34,29 @@ body {
     max-width: 1200px;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--spacing-medium);
+}
+
 .header-image {
     max-width: 200px;
     height: auto;
-    margin-bottom: -50px;
-    z-index: 1;
+    margin-left: 600px;
+    margin-bottom: -70px;
+}
+
+.header-title {
+    flex: 1;
+    text-align: left;
+    margin-left: -410px;
+    margin-bottom: -70px;
+    color: var(--color-white);
+    font-size: var(--font-size-large);
+
 }
 
 .container {
@@ -47,7 +65,7 @@ body {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    min-height: 80vh;
+    min-height: 70vh;
     background: var(--color-secondary);
     padding: var(--spacing-large);
     border-radius: var(--border-radius);
@@ -82,8 +100,9 @@ h1 {
 
 .input-wrapper {
     display: flex;
-    gap: var(--spacing-small);
-    margin-bottom: var(--spacing-large);
+    gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-small);
+    margin-left: 0;
 }
 
 .input-name {
@@ -93,6 +112,9 @@ h1 {
     border-radius: var(--border-radius);
     font-size: var(--font-size-medium);
     outline: none;
+    width: 50%;
+    box-sizing: border-box;
+    margin-left: -20px;
 }
 
 .button-add {
@@ -242,12 +264,12 @@ h1 {
 }
 
 .resultado-container {
-    margin-top: var(--spacing-large);
+    margin-top: var(--spacing-medium);
     background: var(--color-white);
     padding: var(--spacing-medium);
     border-radius: var(--border-radius);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    min-height: 40%;
+    min-height: 30%;
     display: block;
 }
 

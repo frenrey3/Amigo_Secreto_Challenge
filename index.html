@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigo Secreto</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <div class="main-wrapper">
@@ -17,7 +19,6 @@
         <div class="sections">
             <div class="left-section">
                 <div class="input-wrapper">
-                    <label for="amigo"></label>
                     <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
                     <button class="button-add" onclick="agregarAmigo()">Añadir</button>
                 </div>
@@ -30,10 +31,14 @@
                 </div>
                 <div class="button-container">
                     <button class="button-draw" onclick="sortearAmigo()">
-                        <img src="assets/play_circle_outline.png" alt="Icono de sortear"> Sortear amigo
+                        <i class="fas fa-random"></i> Sortear amigo
                     </button>
-                    <button class="button-reset" onclick="reiniciarJuego()">Reiniciar juego</button>
-                    <button class="button-exit" onclick="salir()">Salir</button>
+                    <button class="button-reset" onclick="reiniciarJuego()">
+                        <i class="fas fa-redo"></i> Reiniciar
+                    </button>
+                    <button class="button-exit" onclick="salir()">
+                        <i class="fas fa-sign-out-alt"></i> Salir
+                    </button>
                 </div>
             </div>
             <div class="right-section">
